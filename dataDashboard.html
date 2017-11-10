@@ -1,0 +1,149 @@
+<!-- //about me  -->
+<html lang="en">
+    
+    <head>
+      <meta charset="utf-8">
+      <title>KL</title>
+      <link rel="stylesheet" href="layout/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300" rel="stylesheet">
+    </head> 
+
+    <body>
+
+     <div class='navi'>
+          <p class='header'><a href="index.html"><strong>KiniLuo</strong> ://</a></p>
+          <br>
+          <p class='class'>./<a href="dataViz.html">Data Visualization</a></p>
+              <p class='project'>
+                <a href="dataDashboard.html"><u>TVL Data Quality Dashboard</u></a>
+                <br>
+                <a href="fakeNews.html">Tracing the Twitter Bots</a>
+                <br>
+                <a href="dataDiary.html">Data Diary With ChatBots</a>
+                <br>
+                <a href="googleTrends.html">Google Trends - R/GA Signage</a>
+                <br>
+                <a href="eyeTracker.html">VR Eye Tracker</a>
+                <br>
+                <a href="colorTaxonomy.html">Color Palette of Cities</a>
+                <br>
+                <a href="birthWeight.html">The Gaps of Birth Weight</a>
+              </p>
+        
+      
+          <br>
+          <p class='class'>./<a href="info.html">InfoGraphics</a></p>
+              <p class='project'>
+                <a href="collection.html">A Collection of Infographics</a>
+                <br>
+                <a href="conceptMap.html">Concept Maps for Design Thinking</a>
+              </p>
+        
+
+          <br>
+          <p class='class'>./<a href="graphic.html">Graphic Design + Typography</a></p>
+              <p class='project'>
+                <a href="borobudure.html">Identity Design for Borobudure </a>
+                <br>
+               <!--  <a href="grillSpot.html">Grill Spot</a>
+                <br> -->
+                <a href="typography.html">Typography Practices</a>
+              </p>
+          
+
+          <br>    
+          <p class='class'>./<a href="photo.html">Photography + Videography</a></p>
+              <p class='project'>
+                <a href="onTheWay.html">On the Way</a>
+                <br>
+                <a href="shift.html">Samsung Shift</a>
+              </p>
+          
+        <!--  <br>  
+         <p class='class'>./<a>UX + UI</a></p>
+              <p class='project'>
+                <a href="homeless.html">Designing for Homeless</a>
+                <br>
+                <a href="apiSite.html">TruValue Labs API Site</a>
+              </p> -->
+
+          <br>
+          <p class='class'>./<a href="nothing.html">Sometimes <br>Making Sth Leads to Nothing
+          </a></p>
+
+          <br>
+          <p class='class'>./<a href="about.html">About</a></p>
+           
+      </div>
+
+
+
+    <div class='content'>
+
+        <p class="title"><strong>TVL Data Quality Dashboard</strong></p>
+        <br>
+        <p id="time"> 09.2017 / San Francisco </p>
+
+        <p class="content_text">
+            <img class="content_img_group1" src="img/dataDashboard/1.png" alt="dataDashboard" width=100% ><br><br><br>
+            This dashboard is an internal tool to monitor the quality of TruValue Lab’s self-generated and AI-powered data through data visualizations. 
+            <br><br>
+            It serves for data analyst at the data content team to drill down to details and identify the gap to fill; It also provide a high level overview for the senior leaderships in regards of the data quality issue. 
+            <br><br>
+            To leverage the overall quality of TVL’s self-generated data, the data content team have to test the data at each data processing stage throughout the whole NLP pipeline. The phase I of this Data Quality Dashboard use the data at the beginning of the data ingestion stage for visualization and analysis which relates specifically to the issue of data volume and sources. The data of the dashboard is designed to be updated at a montly frequency. 
+            <br>
+            <br>
+            <iframe src="https://player.vimeo.com/video/241934576?autoplay=1&title=0&byline=0&portrait=0" width=100% height="453" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <br>
+            <br>
+            <br>
+            <br>
+            1.draft product proposal to Product/Design Lead<br><br>
+            I came up with a product proposal which listed out a list of tools that could be used to build the data dashboard and evaluated their pros and cons. After discussions with the Design and Product Lead and the Engineering Team, we decided to adapt a third party dashboarding tool instead of acquiring any extra input from the engineering team given the nature of a start-up environment. 
+            <br>
+            <br>
+            <br>
+            2.understand the task domain<br>
+            I worked closely with the Data Analyst from the Data Content team to better understand the task domain for this set of data visualizations, ensuring that we are on the same page in terms of the nature of the data and what insights could be draw from the designed diagrams. 
+            <br>
+            <br>
+            3.parsing the Data <br>
+            The understanding of the task domain went parallel with the process to actually playing with the complex data dumps pulled from the internal data API. Given the capacities of the dashboarding tool, I optimized the data structure and format to facilitate better performance of the tool from user side. 
+            <br>
+            <br>
+            4.UI/UX design <br>
+            With more than 60 diagrams on hand that are visualized through the dashboarding tool, I grouped them into 4 different categories based on the type of insights they generate and displayed them on separate pages that the users can toggle between. Besides, a monthly data quality overview page was displayed on the landing page which compares some of the KPIs of this month with the previous one.Visual tweaks for colors and overall layout were made to keep the data dashboard visually consistent with other TVL products. 
+            <br>
+            <br>
+            5.QA  <br>
+            I worked closely with data scientist to QA the node.js and python scripts I wrote for parsing the data. We also tested the quality of pulls from data API to ensure that the data source is working correctly. 
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            _development tools:<br>
+            python, node.js 
+
+        </p>
+        <br><br><br><br>
+        <div class="footer">Kini Luo / 2015_2017</div>
+        
+            
+
+        
+    </div>
+   
+   
+    </body>
+
+  <script src="module/d3.min.js"></script>
+  <script src="module/jquery-3.0.0.min.js"></script>
+  <script src="module/three.min.js"></script>
+  <script src="module/TweenMax.min.js" ></script>
+  <script src="script/script.js"></script>
+    
+</html>

@@ -87,16 +87,64 @@
         <p id="time">05.2017 _ now  [ a work in progress ]</p>
         <p class="content_text">
          <img class="content_img_group1" src="img/fakenews/head.png" alt="mock1" width=100% > <br><br><br>
-          How can a seemingly human twitter user metamorphoze to a twitter bot? <br>
-          Are there any criteria we could use to make a reasonable judgment on the reliability of the information we ingested from social media on a daily basis? <br><br>
-          A set of "special" Twitter users id is identified by matching the combination of names and locations that only appeared once from the voter records for 2017 presidential election with the twitter accounts that has identical registration information. 
+          People are strange when you are stranger, especially encountering online.<br>
+          Maybe this person is even not a person, neither a bot.<br><br>
+
+            The drive for project include but not only include the curiosities listed below:
+            <br><br>
+            How can a seemingly human twitter user metamorphose to a twitter bot? <br><br>
+            Are there any criteria we could use to make a reasonable judgment on the reliability of the information we ingested from social media on a daily basis? <br><br>
+            WTF is going on on the social media... ...
+
+          <br><br><br><br>
+            <strong>1.About The Data</strong>
+<br><br>
+The data scientists in the Lazer Lab from Northeastern University created an algorithm to cluster 7 predominant sites that tweeter users most frequently retweeted links from through Aug 2016 to Feb 2017, during presidential election.<br>
+Besides 6 news sites that have certain levels of credibility from the public, there is also a special group that is labeled as "FAKE NEWS" which is a medley of 449 sites that are defined as fake news sites.
+<br>
+The data scientists then identified individuals with unique names and locations from the voter records, and match them with Twitter users who share the same profile. 
+<br>
+The final step is that the data scientists identified the most active top 20 sharers for each of these 7 sites, as well as their activities on Twitter during the election. 
+<br>
+Thus, here we get a simple CSV file which annotates the "source and target" relationship of this super-sharer network<br>
+AND<br>
+A considerably large set of JSON file to describe the behavior of each of these active super-sharers.
+          <br><br><br><br>
+            <strong>2.Initial Exploration</strong>
+<br><br>
+Below is a static data visualization that presents comparisons amount twitter accounts that are suspicious at the initial stage.
+            <br><br>
+           <img class="content_img_group1" src="img/fakenews/fakenews.png" alt="mock1" width=100% > <br><br>
+One could roughly conclude from this infographic that traditional news agencies like New York Times and CNN locate more distant from the center of this network rather than social media such as FACEBOOK and YOUTUBE.
+<br>
+If one looks at how different users inside this network tweets over the election, it's not hard to spot that there is a huge difference in the daily aggregated volume and frequency one tweets by looking at the area-charts and heat-maps. The three significant electorial events mapped on top of the time-series implies certain users are ultra-active on these dates.
+            <br><br><br><br>
+            <strong>3.One Step Furthur While Making it Interactive <br>(This is where I am currently at)</strong>
+<br><br>
+The static visualization gives a finite summary of how the data could look like but the information it reals is far less than what is really in there. Thus, making it interactive and exploratory is a solution. 
+<br>
+Following are some modular prototypes I created to test the performance of my code and saved for later using one the data pipeline is ready.
+<br><br>
+          [UPDATE THE INTERNAL FORCE]    
+          <iframe src="https://player.vimeo.com/video/271589225" width=100% height="605" frameborder="0"  controls autoplay loop=infinite></iframe>
+           <br><br><br><br>
+          [TOGGLE BETWEEN HEATMAP]
+            <iframe src="https://player.vimeo.com/video/271597885" width=100% height="203" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <br><br><br><br>
+          [VOLUME INTERACTION]
+            <br><br><br><br>
+            <iframe src="https://player.vimeo.com/video/271598168" width="640" height="354" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            
+            
+          <br><br><br>
+          The bi-product of this fun experiment is my MFA Thesis book which talks a lot about Embodied Interaction and how to design for Conversational User Interface.
+          Not super mature writing but you could still take a look at 
+          <u><a href="img/datadiary/KiniLuo-MFAthesis.pdf" target="_blank">MY MFA THESIS</a></u> since there are plenty of concept maps I created for CUI and some discussion about how to deal with bot as human.
+
           <br><br>
-          Below is a static data visualization that presents comparisons amount twitter accounts that are suspicious.  
-          <br><br>
-           <img class="content_img_group1" src="img/fakenews/fakenews.png" alt="mock1" width=100% > 
-           <br><br><br><br><br><br>
+           <br><br><br><br>
            _tools:<br>
-           metrics-graphic.js,d3.js,node.js,adobe creative suite
+           d3.js,jQuery,ScrollMagic,React,node.js,mongoDB,IBM Watson,adobe creative suite
 
 
 
